@@ -13,3 +13,9 @@ WHERE date_of_birth < '1993-05-12';
 SELECT period, year 
 FROM `courses` 
 WHERE period = 'I semestre' AND year = '1'; 
+
+//query 5
+SELECT hour, date 
+FROM exams 
+WHERE hour > '14:00:00' AND date = '2020-06-20'; 
+
