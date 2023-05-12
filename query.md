@@ -8,3 +8,8 @@ SELECT cfu FROM courses WHERE cfu > 10;
 SELECT date_of_birth 
 FROM students 
 WHERE date_of_birth < '1993-05-12'; 
+
+//query 4
+SELECT period, year 
+FROM `courses` 
+WHERE period = 'I semestre' AND year = '1'; 
