@@ -19,3 +19,7 @@ SELECT hour, date
 FROM exams 
 WHERE hour > '14:00:00' AND date = '2020-06-20'; 
 
+//query 6
+SELECT level 
+FROM degrees 
+WHERE level = 'magistrale'; 
