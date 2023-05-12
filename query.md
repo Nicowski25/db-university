@@ -3,3 +3,8 @@ SELECT date_of_birth FROM students where date_of_birth BETWEEN '1990-1-1' AND '1
 
 //query 2
 SELECT cfu FROM courses WHERE cfu > 10;
+
+//query 3
+SELECT date_of_birth 
+FROM students 
+WHERE date_of_birth < '1993-05-12'; 
