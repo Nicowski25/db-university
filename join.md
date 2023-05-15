@@ -28,5 +28,12 @@ JOIN departments ON departments.id = degrees.department_id
 ORDER BY students.surname, students.name
 
 //Query 5
+SELECT degrees.name, courses.name, teachers.name, teachers.surname
+FROM courses 
+JOIN degrees ON degrees.id = courses.degree_id
+JOIN course_teacher ON course_teacher.course_id = courses.id
+JOIN teachers ON teachers.id = course_teacher.teacher_id
+ORDER BY degrees.names
+
 //Query 6
 //Query 7
