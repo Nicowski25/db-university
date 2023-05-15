@@ -20,6 +20,13 @@ AND teachers.surname = 'Amato'
 AND teachers.id = 44;
 
 //Query 4
+SELECT students.name, students.surname, degrees.*, departments.name
+FROM students
+JOIN degrees ON degrees.id = students.degree_id
+JOIN courses ON courses.degree_id = courses.id
+JOIN departments ON departments.id = degrees.department_id
+ORDER BY students.surname, students.name
+
 //Query 5
 //Query 6
 //Query 7
