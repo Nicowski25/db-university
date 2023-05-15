@@ -36,4 +36,12 @@ JOIN teachers ON teachers.id = course_teacher.teacher_id
 ORDER BY degrees.names
 
 //Query 6
+SELECT teachers.name, teachers.surname, courses.name, departments.name
+FROM course_teacher
+JOIN teachers ON teachers.id = course_teacher.teacher_id
+JOIN courses ON courses.id = course_teacher.course_id
+JOIN degrees ON degrees.id = courses.degree_id
+JOIN departments ON departments.id = degrees.department_id
+WHERE departments.name = 'Dipartimento di Matematica'
+
 //Query 7
